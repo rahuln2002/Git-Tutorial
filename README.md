@@ -67,3 +67,19 @@ git diff
 ```bash
 git diff --staged
 ```
+14. create new branch
+```bash
+git branch <new-branch-name>
+```
+15. switch to another branch
+```bash
+git checkout <branch-name>
+```
+16. merge a branch to current branch
+```bash
+git merge <branch-name>
+```
+17. history of commits in current branch
+```bash
+git log
+```
