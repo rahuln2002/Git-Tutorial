@@ -1,6 +1,7 @@
 # Git Tutorial
 
 ### Git Configuration
+Set name and email address associated with version maker
 ```bash
 git config --global user.name "<first-name last-name>"
 git config --global user.email "<email>"
@@ -15,7 +16,7 @@ git clone <repository-link.git>
 ```bash
 git init
 ```
-2. check files status
+2. check files status (file(s) modified or staged)
 ```bash
 git status
 ```
@@ -82,4 +83,8 @@ git merge <branch-name>
 17. history of commits in current branch
 ```bash
 git log
+```
+18. fetch and pull commits from tracking remote branch (resolving conflicts)
+```bash
+git pull
 ```
