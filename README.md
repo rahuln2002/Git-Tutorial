@@ -7,6 +7,10 @@ git config --global user.email "<email>"
 ```
 
 ### Git Commands
+0. clone a repository
+```bash
+git clone <repository-link.git>
+```
 1. initialize local repository
 ```bash
 git init
@@ -35,7 +39,7 @@ git branch -m Main
 ```
 7. connect origin(`local`) repository to `main` repository
 ```bash
-git remote add origin <link.git>
+git remote add origin <repository-link.git>
 ```
 8. check from where `fetch` and `push` is done: origin(`local`)
 ```bash
@@ -45,7 +49,21 @@ git remote -v
 ```bash
 git push origin Main
 ```
-10. restore any changes done in `local`
+10. restore any changes done in `local` back from `main`
 ```bash
 git restore
+```
+11. unstage file(s)
+```bash
+git restore --staged <file-name>
+  # or
+git reset
+```
+12. changes in file(s) but not staged
+```bash
+git diff
+```
+13. changes in file(s) staged but not commited
+```bash
+git diff --staged
 ```
